@@ -1,0 +1,16 @@
+.box-image div:has(img) {
+	transition: transform 0.3s ease;
+	
+}
+
+.box-image:hover :is(.par4-1, .par4-3, .par3-1, .par3-3, .par2-1, .par1-1) {
+	transform: translateX(30px) translateY(-30px)rotate(10deg);
+	z-index: 9999;
+}
+.box-image:hover :is(.par4-2, .par4-4, .par3-2, .par2-2) {
+	transform: translateX(-30px) translateY(-30px)rotate(-10deg);
+	z-index: 9999;
+}
+.box-image:hover .description {
+	z-index: 9999;
+}
