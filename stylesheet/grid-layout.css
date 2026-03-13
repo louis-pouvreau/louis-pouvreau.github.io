@@ -38,7 +38,7 @@
 .box-image {
 	position: relative;
 	display: block;
-	border-radius: 2vh;
+	border-radius: 2.3vh;
 	background-color: var(--hoverDarkGray);
 	aspect-ratio: 3/4;
 }
