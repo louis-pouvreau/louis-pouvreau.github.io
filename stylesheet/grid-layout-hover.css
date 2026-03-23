@@ -43,4 +43,5 @@ div.hover:hover {
 
 div.hover > p {
 	color: var(--veryLightPeach);
+	background: rgba(0, 0, 0, 0.4);
 }
