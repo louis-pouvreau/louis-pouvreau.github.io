@@ -27,7 +27,7 @@
 	overflow: hidden;
 }
 
-.homeimg > div div {
+.homeimg > div a div {
 	position: absolute;
 	top: 37%;
 	left: 5%;
@@ -48,6 +48,10 @@ div.corp {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	border-radius: 15px;
+}
+
+#corp {
+	scroll-margin-top: 90px;
 }
 
 div.article {
@@ -94,4 +98,23 @@ div.article p {
 
 .underline-anim:hover::after {
 	width: 100%;
+}
+
+button#arrow-down {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	padding: 0;
+	transition: transform 0.7s cubic-bezier(.67,0,.33,1);
+}
+.transition-arrow {
+	transform: scale(2.5) translateY(-100%);
+}
+
+
+div.arrow-down {
+	display: flex;
+	justify-content: center;
 }

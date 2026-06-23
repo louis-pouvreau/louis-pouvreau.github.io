@@ -1,4 +1,6 @@
 
+window.scrollTo(0, 0);
+
 const header = document.querySelector('header');
 const liHome = header.querySelector('li.home')
 const homeButton = liHome.querySelector('div');
@@ -38,7 +40,7 @@ function homeButtonUpdate() {
 
     liHome.classList.remove('thin');
     liContact.classList.remove('thin');
-    liHome.classList.add('large')
+    liHome.classList.add('large');
   }
 }
 

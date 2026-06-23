@@ -85,13 +85,13 @@ li.menu.home div.enlarge {
 }
 
 @keyframes shrink {
-  from {width: calc(175.617px + 40.8px);}
+  from {width: var('--width_text_header', calc(175.617px + 40.8px));}
   to { width: 40.8px; }
 }
 
 @keyframes enlarge {
 	from { width: 40.8px; }
-	to { width: calc(175.617px + 40.8px); }
+	to { width: var('--width_text_header', calc(175.617px + 40.8px)); }
 }
 
 li.menu.home div p {
