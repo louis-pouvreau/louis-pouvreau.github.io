@@ -1,8 +1,5 @@
 .corp {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	padding-left: 3vh;
-	padding-right: 3vh;
+	padding: 40px 3vh;
 	display: grid;
 	grid-gap: 2vh;
 }
@@ -61,6 +58,10 @@
 .corp div:has(> img):not(.title) {
 	overflow: hidden;
 	border-radius: 2vh;
+}
+
+div.box-image div:has(img)[class^='par'] {
+	width: 100%;
 }
 
 div.box-image div:has(img):is(.par4-1, .par3-1, .par2-1, .par1-1) {
