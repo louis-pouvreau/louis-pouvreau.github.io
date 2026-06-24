@@ -32,7 +32,11 @@
 	width: fit-content;
 	color: #fff;
 	font-size: 5vw;
+	padding: 0.1em;
+}
+.description h2.on_white {
 	border-radius: 2vh;
+	background-color: #1111;
 }
 
 .box-image {
