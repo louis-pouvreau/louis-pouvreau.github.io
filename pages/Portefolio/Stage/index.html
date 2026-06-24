@@ -55,7 +55,7 @@
 		<h1 class="cabin-bold">Contexte :</h1>
 
 		<p>L’entreprise concernée utilise de nombreuses pièces métalliques ou plastiques destinées à être intégrées dans les ouvrages en béton. Ces éléments, achetés en grande quantité, sont stockés dans des boîtes en bois fabriquées par la menuiserie interne.</p>
-		<p>La gestion reposait entièrement sur la vérification visuelle des employés du contenu des boîtes, sans instrumentation mécanique ou électronique, entraînant des risques fréquents de rupture de stock.</p>
+		<p>La gestion reposait entièrement sur la vérification visuelle par les employés du contenu des boîtes, sans instrumentation mécanique ou électronique, entraînant des risques fréquents de rupture de stock.</p>
 
 		<p>Une analyse préliminaire de la situation a montré que la solution devait être intégrée dans un environnement soumis :</p>
 
@@ -63,7 +63,7 @@
 			<li><p>&Agrave; la poussière,</p></li>
 			<li><p>à l’humidité,</p></li>
 			<li><p>à des variations de température,</p></li>
-			<li><p>à des charges variables pouvant dépasser plusieurs centaines de kilogrammes voir dans certains cas la tonne.</p></li>
+			<li><p>à des charges variables pouvant dépasser plusieurs centaines de kilogrammes, voire dans certains cas la tonne.</p></li>
 		</ul>
 
 		<p>Ces contraintes ont guidé toute la suite du projet.</p>
@@ -93,13 +93,13 @@
 		<ul>
 			<li><p>Doit permettre d’afficher les stocks sur une interface simple.</p></li>
 			<li><p>Doit envoyer une alerte en cas de niveau critique.</p></li>
-			<li><p>Doit fonctionner sur un réseau sans fils.</p></li>
+			<li><p>Doit fonctionner sur un réseau sans fil.</p></li>
 		</ul>
 
 		<h1 class="cabin-bold">Premières analyses :</h1>
 
-		<p>L’étude de l’existant a montré que : aucune mesure automatique n’était disponible, les boîtes de stockage n’étaient pas équipées de systèmes mécaniques et que les ruptures de stock survenaient sans signalement préalable.</p>
-		<p>Pour répondre à chaque fonction du cahier des charges, le système à été séparé en 3 parties : capteur, avertisseur et contrôleur.</p>
+		<p>L’étude de l’existant a montré que : aucune mesure automatique n’était disponible, les boîtes de stockage n’étaient pas équipées de systèmes mécaniques et les ruptures de stock survenaient sans signalement préalable.</p>
+		<p>Pour répondre à chaque fonction du cahier des charges, le système a été séparé en 3 parties : capteur, avertisseur et contrôleur.</p>
 		<p>Ces éléments ont conduit à la recherche d’un système capable d’estimer le niveau des stocks sans modification majeure des habitudes de travail.</p>
 
 		<h1 class="cabin-bold">Étude des solutions possibles :</h1>
@@ -115,7 +115,7 @@
 			<li><p>un capteur vidéo associé à une intelligence artificielle.</p></li>
 		</ul>
 
-		<p>Afin de les départager, un tableau multicritère a été élaborée. Les critères utilisés incluaient notamment :</p>
+		<p>Afin de les départager, un tableau multicritère a été élaboré. Les critères utilisés incluaient notamment :</p>
 
 		<ul>
 			<li><p>la maîtrise technique,</p></li>
@@ -128,7 +128,7 @@
 		</ul>
 
 		<p>Le tableau de pondération a mis en évidence deux solutions pertinentes :</p>
-		<p>Le capteur de poids via résistance variable, adapté aux charges élevées et le capteur de distance, applicable aux boîtes plus légères.</p>
+		<p>Le capteur de poids via résistance variable, adapté aux charges élevées, et le capteur de distance, applicable aux boîtes plus légères.</p>
 		<p>Ces deux solutions ont été retenues pour la suite du projet afin de respecter la contrainte "deux solutions maximum".</p>
 
 
@@ -155,7 +155,7 @@
 					<li><p>une capacité à héberger un serveur web local.</p></li>
 				</ul>
 
-				<p>Pendant la phase de test un kit de développement ajoutant des connectiques USB a été utilisé pour les phases de test.</p>
+				<p>Un kit de développement ajoutant des connectiques USB a été utilisé pour les phases de test.</p>
 			</div>
 			<div>
 				<img src="../../../img/Portefolio/Stage/ESP32_devKit/ESP32 DevKit.png">
@@ -204,7 +204,7 @@
 
 		<h2 class="cabin-bold">Circuit de mesure :</h2>
 			
-		<p>Le système nécessitait une mesure précise de la tension issue du potentiomètre qui a été intégré dans un pont diviseur de tension. Mais les premiers essais sur platine ont mis en évidence une surtension liée à la qualité des composant électronique de la carte.</p>
+		<p>Le système nécessitait une mesure précise de la tension issue du potentiomètre qui a été intégré dans un pont diviseur de tension. Mais les premiers essais sur platine ont mis en évidence une surtension liée à la qualité des composants électroniques de la carte.</p>
 		<p>Un réglage de tension a alors été intégré via un second potentiomètre, puis le montage a été reproduit sur PCB afin d’assurer une stabilité suffisante pour les tests.</p>
 			
 		<div class="split2">
@@ -218,7 +218,7 @@
 
 		<h2 class="cabin-bold">Développement de l’interface numérique :</h2>
 
-		<p>L'interface web a été développée en HTML et CSS afin d’afficher un premier temps les niveaux de stock. Ensuite cette interface à été rendu dynamique à l'aide de MicroPython, un logiciel qui permet de traduire un programme Python en code pour ESP32, en permettant de déclencher des mesures, et de les afficher sur l'interface.</p>
+		<p>L'interface web a été développée en HTML et CSS afin d’afficher, dans un premier temps, les niveaux de stock. Ensuite cette interface a été rendue dynamique à l'aide de MicroPython, un logiciel qui permet de traduire un programme Python en code pour ESP32, en permettant de déclencher des mesures et de les afficher sur l'interface.</p>
 
 		<p>Pour rendre l'interface accessible, le système a été configuré pour fonctionner en mode station (STA) qui permet la connexion à un réseau, avec basculement possible en point d’accès (AP) en cas d’échec.</p>
 
@@ -226,9 +226,9 @@
 
 
 		<p>L’ensemble des pièces mécaniques (cache, support, système hélicoïdal) a été modélisé et produit en impression 3D.</p>
-		<p>Plusieurs versions ont été testées afin d’optimiser la rigidité, l’encombrement, la protection contre la poussière et la la facilité de montage.</p>
+		<p>Plusieurs versions ont été testées afin d’optimiser la rigidité, l’encombrement, la protection contre la poussière et la facilité de montage.</p>
 
-		<p>Malheureusement la fabrication finale des pièces a été interrompue en raison d’une perte des paramètres d’impression optimisés.</p>
+		<p>Malheureusement, la fabrication finale des pièces a été interrompue en raison d’une perte des paramètres d’impression optimisés.</p>
 		<p>Cependant la conception étant validée, la production reste totalement réalisable sur un autre équipement.</p>
 
 		<h1 class="cabin-bold">Résultats :</h1>
@@ -251,9 +251,9 @@
 		<p>La solution conçue apporte une réponse adaptée à la problématique de gestion des stocks rencontrée par l’usine de préfabrication béton. Elle permet de réduire les risques d’interruption de production, d’améliorer le suivi des matériaux et de simplifier le travail des opérateurs.</p>
 		<p>Grâce à une démarche structurée, comprenant analyse, conception mécanique, prototypage, électronique et développement logiciel, un système complet et fonctionnel a pu être défini et testé.</p>
 
-		<p>Ce stage m'aura permit de progresser sur les 3 axes importants de l’ingénierie , à savoir la mécanique, la programmation et l'électronique et m'aura permis de réalisé un projet passionnant en presque total autonomie.</p>
+		<p>Ce stage m'aura permis de progresser sur les 3 axes importants de l’ingénierie, à savoir la mécanique, la programmation et l'électronique. &Eacutegalement cela m'aura permis de réaliser un projet passionnant en presque totale autonomie.</p>
 
-		<p>Et je remercie ceux qui m'ont permis de réaliser ce stage, Benjamin Merceron mon maître de stage, ABP Préfa la société qui accueilli dans leurs locaux, Yannis Pouvreau et Xavier Werkmeister qui m'ont mis en contact avec M. Merceron.</p>
+		<p>Et je remercie ceux qui m'ont permis de réaliser ce stage, Benjamin Merceron, mon maître de stage, ABP Préfa, la société qui m'a accueilli dans ses locaux, Yannis Pouvreau et Xavier Werkmeister, qui m'ont mis en contact avec M. Merceron.</p>
 
 	</div>
 	<footer>

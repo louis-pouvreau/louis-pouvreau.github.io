@@ -22,6 +22,8 @@ div.hover {
 	padding: 2vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	scrollbar-width: none;
+
 }
 div.hover > p {
 	font-size: 24px;
@@ -29,7 +31,7 @@ div.hover > p {
 
 div.hover:hover {
 	background-color:  #0c0c0caa;
-	
+	scrollbar-width: thin;
 }
 div.hover:hover > p {
 	color: var(--veryLightPeach);
@@ -53,10 +55,7 @@ div.hover > p {
 	background-color: #0000;
 	border-radius: 1em;
 	display: inline-block;
-	padding-right: 0.4em;
-	padding-left: 0.4em;
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
+	padding: 0.2em 0.4em;
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 }
